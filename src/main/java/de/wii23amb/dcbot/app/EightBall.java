@@ -232,7 +232,7 @@ public class EightBall extends ListenerAdapter {
             EmbedBuilder eb = new EmbedBuilder();
             eb.setColor(Color.CYAN);
             eb.setTitle("\"" + question + "\"");
-            eb.setAuthor("Requested by " + event.getMember().getUser().getAsTag(), event.getMember().getUser().getAvatarUrl());
+            eb.setAuthor("Requested by " + event.getMember().getUser().getName(), event.getMember().getUser().getAvatarUrl());
             eb.setDescription("`" + randomAnswer + "`");
             eb.setThumbnail("https://images-ext-1.discordapp.net/external/F3wT0ODh1hfdnZqnk0vzT5Seg3wIr551w0iuWvfGeoM/https/i.imgur.com/nXanD2e.png");
             eb.setTimestamp(Instant.now());
